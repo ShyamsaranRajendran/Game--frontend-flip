@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.background{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("back-img.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover; /* You can specify the desired size here */
+    
+    background-size: cover;
+
+}
+.bird{
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    top: 40vh;
+    left: 30vw;
+    z-index: 100;
+
+}
+.pipe_sprite {
+    position: fixed;
+    top: 40vh;
+    left: 50%; /* Adjust this value based on your layout */
+    height: 70vh;
+    width: 6vw;
+    background: radial-gradient(lightblue 50%, lightblue );
+    border: 5px solid black;
+}
+
+
+.message{
+    position: absolute;
+    z-index: 10;
+    color: black;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+
+.messagestyle{
+    background: white;
+    padding: 30px;
+    box-shadow: rgb(0,0,0,0.75) 0px 4px 8px;
+    border-radius: 5%;
+
+}
+
+.score{
+    position: fixed;
+    z-index: 10;
+    height: 10vh;
+    width: 10vw;
+    font-size: 10vh;
+    font-weight: 100;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: brown;
+    top:0;
+    left: 0;
+    margin: 10px;
+
+}
+.score_val{
+    color: gold;
+    font-weight: bold;
+
+}
+
+@media only screen and (max-width : 1000px)
+{
+    .message{
+        font-size: 50px;
+        top: 50%;
+        white-space : nowrap;    
+    }
+    .score{
+        font-size: 8vh;
+
+    }
+    .bird{
+        width: 110px;
+        height:90px;
+
+    }
+    .pipe_sprite{
+        width: 14vw;
+    }
+}
