@@ -1,4 +1,4 @@
-let move_speed = 3, gravity = 0.4;
+let move_speed = 3, gravity = -0.7;
 let bird = document.querySelector('.bird');
 let img = document.getElementById('bird-1');
 
